@@ -20,21 +20,21 @@ Download zip archive from github or clone this repository
 You can use it as a command line or as a go library to dynamically generate code in go programs.
 
 ## build the binary
-Go in `Go-Template/src` directory.
+Go in `Go-Templates/src` directory.
 
 ```
-cd Go-Template/src
+cd Go-Templates/src
 go build
 ```
 
-Add Go-Template to your binaries or to your PATH (i.e `sudo mv Go-Template /usr/local/bin`)
+Add Go-Templates to your binaries or to your PATH (i.e `sudo mv Go-Templates /usr/local/bin`)
 
 ## command line
 Go in one of the examples directory and run Go-Template with a data file and a template file as parameters.
 
 ```
-cd Go-Template/examples/01-values
-Go-Template -d email.json -t  email.tpl
+cd Go-Templates/examples/01-values
+Go-Templates -d email.json -t  email.tpl
 ```
 
 ## output directory 
@@ -43,12 +43,12 @@ By default, generated files are created in the same folder as the json file.
 
 You can change the ouput directory with `-o outputdirectory`
 
-`Go-Template -d email.json -t  email.tpl -o /tmp/gocodegentest`
+`Go-Templates -d email.json -t  email.tpl -o /tmp/gocodegentest`
 
 ## multiple file generation
 If your Json Data file is designed to generate multiple files (see Example 5 below), use the following command :
 
-`Go-Template -d mailing.json -t mailing.tpl -m multi`
+`Go-Templates -d mailing.json -t mailing.tpl -m multi`
 
 # Examples
 
@@ -77,9 +77,9 @@ And the following data :
 
 ```
 {
-    "Name": "Phil",
-    "Date": "01/01/2018",
-    "Project": "Go-Template",
+    "Name": "Ram N Sangwan",
+    "Date": "01/01/2023",
+    "Project": "Go-Templates",
     "Topics": [
         "write documentation",
         "publish to github.com",
@@ -91,17 +91,17 @@ And the following data :
 
 The following command,
 
-`Go-Template -d 01-values/email.json -t 01-values/email.tpl`
+`Go-Templates -d 01-values/email.json -t 01-values/email.tpl`
 
 generates `email.generated.txt` file
 
 ```
 
-Dear Phil,
+Dear Ram N Sangwan,
 
 Hello, 
 
-We would like to assign some tasks for Go-Template project :
+We would like to assign some tasks for Go-Templates project :
 
     - write documentation
 
@@ -110,7 +110,7 @@ We would like to assign some tasks for Go-Template project :
     - add more examples
 
 
-Can we plan a meeting on 01/01/2018 ?
+Can we plan a meeting on 01/01/2023 ?
 
 Regards,
 
@@ -187,7 +187,7 @@ The following command,
 
 ```
 
-`Go-Template -d schema.json -t createtable.tpl`
+`Go-Templates -d schema.json -t createtable.tpl`
 
 generates the following file
 
@@ -242,7 +242,7 @@ And the following numbers to be compared :
 
 ```
 
-`Go-Template -d numbers.json -t numbers.tpl`
+`Go-Templates -d numbers.json -t numbers.tpl`
 
 generates the following file
 
@@ -447,7 +447,7 @@ Each object has a `FileName` used to create the file, and a `Data` object which 
 
 The following command (do not forget `-m multi` flag) :
 
-`Go-Template -d mailing.json -t mailing.tpl -m multi`
+`Go-Templates -d mailing.json -t mailing.tpl -m multi`
 
 generates 3 different files :
 
@@ -521,7 +521,7 @@ Regards,
 ```
 
 ## Go templates examples
-Here is the list of Go template examples.  You can use them in your own code or with the generator documented below.
+Here is the list of Go templates examples.  You can use them in your own code or with the generator documented below.
 
 | directory | template               | values       | description                                           |
 | --------- | ---------------------- | ------------ | ----------------------------------------------------- |
