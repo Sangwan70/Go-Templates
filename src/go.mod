@@ -1,4 +1,4 @@
-module github.com/phcollignon/Go-Template
+module github.com/Sangwan70/Go-Templates
 
 go 1.15
 
