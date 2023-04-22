@@ -5,7 +5,7 @@ This repository contains a Go code generator based on Go Template and a set of G
 ## Go code generator
 Go templates are one of the best choice to build a fast and small code generation tool. 
 
-The sample code generator tool presented here can generate any type of code from Go templates and json or yaml data. 
+The code generator used here can generate any type of code from Go templates and json or yaml data. 
 
 ![alt text](Gocodegen.png "Logo Title Text 1")
 
