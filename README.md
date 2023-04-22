@@ -13,7 +13,7 @@ The sample code generator tool presented here can generate any type of code from
 # Installation
 Download zip archive from github or clone this repository
 
-`git clone https://github.com/phcollignon/Go-Template`
+`git clone https://github.com/Sangwan70/Go-Templates`
 
 
 # Usage
